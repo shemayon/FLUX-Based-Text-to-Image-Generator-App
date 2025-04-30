@@ -93,8 +93,3 @@ outputs/run7_002_female_25.png
 ## 📬 Feedback
 
 Pull requests, issues, and suggestions are welcome!
-```
-
----
-
-Let me know if you'd like badges (e.g., Python version, license), deployment instructions (Docker, Hugging Face Spaces), or if you want a GIF/image preview added.
