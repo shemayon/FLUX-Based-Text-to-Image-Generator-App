@@ -5,6 +5,23 @@ This is a **Gradio-powered image generation app** built using the `FluxPipeline`
 
 ---
 
+## 🔍 UI Preview
+
+<p align="center">
+  <img src="assets/ui.png" alt="Gradio UI" width="600"/>
+</p>
+
+---
+
+## 🎨 Sample Output Examples
+
+<p align="center">
+  <img src="assets/examples.png" alt="Generated Examples" width="600"/>
+</p>
+
+
+---
+
 ## 📁 Directory Structure
 
 ```
