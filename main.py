@@ -1,80 +1,62 @@
-import torch
-torch.cuda.empty_cache()
-from diffusers import FluxPipeline
-import json
-import os
-import re
+import gradio as gr
+from utils.pipeline import generate
 
-pipe = FluxPipeline.from_pretrained(
-    "black-forest-labs/FLUX.1-dev",
-    torch_dtype=torch.float16
+# -----------------------------  GRADIO INTERFACE  ---------------------------
+CSS = """
+#app-container {max-width: 600px;margin-left:auto;margin-right:auto;}
+#title-container {display:flex;align-items:center;justify-content:center;}
+#title-icon {width:32px;height:auto;margin-right:10px;}
+#title-text {font-size:24px;font-weight:bold;}
+"""
+
+DEFAULT_NEG_PROMPT = (
+    "(deformed, distorted, disfigured), poorly drawn, bad anatomy, wrong anatomy, "
+    "extra limb, missing limb, floating limbs, (mutated hands and fingers), "
+    "disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, "
+    "misspellings, typos"
 )
 
-pipe.enable_sequential_cpu_offload()
-pipe.enable_model_cpu_offload()
-# pipe.to("cpu")
 
 
-# Load the LoRA weights
-pipe.load_lora_weights(
-    "kudzueye/boreal-flux-dev-v2", 
-    weight_name="boreal-v2.safetensors"
-)
+with gr.Blocks(theme="Nymbo/Nymbo_Theme", css=CSS) as app:
+    gr.HTML(
+        """
+        <center>
+            <div id="title-container">
+                <h1 id="title-text">Text to Image Generator using Flux</h1>
+            </div>
+        </center>
+        """
+    )
 
-# Fuse LoRA with scaling
-pipe.fuse_lora(lora_scale=0.8)
+    with gr.Column(elem_id="app-container"):
+        with gr.Row():
+            with gr.Column(elem_id="prompt-container"):
+                with gr.Row():
+                    txt_prompt = gr.Textbox(
+                        label="Prompt",
+                        placeholder="Enter a prompt here",
+                        lines=2,
+                        elem_id="prompt-text-input",
+                    )
+                with gr.Row():
+                    with gr.Accordion("Advanced Settings", open=False):
+                        neg_prompt = gr.Textbox(
+                            label="Negative Prompt",
+                            placeholder="What should not be in the image",
+                            value=DEFAULT_NEG_PROMPT,
+                            lines=3,
+                            elem_id="negative-prompt-text-input",
+                        )
+        with gr.Row():
+            gen_btn = gr.Button("🚀 Generate")
+        img_out = gr.Image(label="Result", interactive=False)
+        path_out = gr.Markdown()
 
-# Reduces memory use during attention computations
-pipe.enable_attention_slicing()
+    gen_btn.click(
+        fn=generate,
+        inputs=[txt_prompt, neg_prompt],
+        outputs=[img_out, path_out],
+    )
 
-
-## Run inference
-
-# Set run ID
-def get_next_run_id(outputs_dir='outputs'):
-    # Regular expression pattern to match filenames
-    pattern = re.compile(r'^run(\d+)_\w+_\w+_\w+\.png$')
-
-    # Make sure the outputs folder exists
-    if not os.path.exists(outputs_dir):
-        os.makedirs(outputs_dir)
-        return 1
-
-    run_ids = []
-
-    for filename in os.listdir(outputs_dir):
-        match = pattern.match(filename)
-        if match:
-            run_ids.append(int(match.group(1)))
-
-    return max(run_ids, default=0) + 1
-
-# Get run ID for the current run
-current_run_id = get_next_run_id()
-
-# Set constant negative prompt
-negative_prompt = """messy hair, exaggerated makeup, low resolution, shadows on face, blurry, harsh lighting,
-busy background, distorted features, poor posture, open mouth, casual clothing,
-artistic style, cartoon, painting, sketch, unrealistic skin texture"""
-
-with open('prompts.json', 'r') as f:
-    prompts_data = json.load(f)
-
-# Iterate through the prompts and call the generation function
-for image_id, details in prompts_data.items():
-    prompt = details['prompt']
-    gender = details['gender']
-    age = details['age']
-    
-    # Generate image
-    print('Genration started for image ID:', image_id)
-    image = pipe(
-        prompt=prompt,
-        negative_prompt=negative_prompt,
-        height=1024,
-        width=1024,
-        num_inference_steps=30
-    ).images[0]
-
-    # Save image
-    image.save(f"outputs/run{current_run_id}_{image_id}_{gender}_{age}.png")
+app.launch(share=True)

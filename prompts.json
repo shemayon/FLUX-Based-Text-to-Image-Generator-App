@@ -1,202 +1,33 @@
 {
-    "w01": {
-        "gender": "woman",
-        "age": "late30s",
-        "prompt": "Professional headshot, late 30s woman, European ethnicity, fair skin, straight dark brown hair, shoulder-length. Navy blue tailored blazer, white button-up shirt. Confident, approachable expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w02": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "Corporate profile photo, early 40s woman, American ethnicity, light skin, wavy blonde hair, bob cut. Charcoal grey suit jacket, pastel blue blouse. Friendly, professional gaze, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w03": {
-        "gender": "woman",
-        "age": "mid30s",
-        "prompt": "LinkedIn portrait, mid 30s woman, European ethnicity, medium skin tone, curly black hair, medium length. Emerald green tailored dress. Calm, insightful expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w04": {
-        "gender": "woman",
-        "age": "late40s",
-        "prompt": "Professional photo, late 40s woman, American ethnicity, fair skin, short silver hair, neatly styled. Black turtleneck sweater. Elegant, thoughtful expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w05": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "Business headshot, early 40s woman, European ethnicity, light skin, straight blonde hair, long, pulled back in a ponytail. Burgundy blazer, cream blouse. Assured, capable expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w06": {
-        "gender": "woman",
-        "age": "mid30s",
-        "prompt": "Corporate headshot, mid 30s woman, American ethnicity, medium skin tone, wavy brown hair, shoulder length. Teal tailored jacket, white top. Warm, professional smile, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w07": {
-        "gender": "woman",
-        "age": "late30s",
-        "prompt": "Professional portrait, late 30s woman, European ethnicity, fair skin, dark brown hair, lob cut. Soft pink blouse, grey cardigan. Gentle, intelligent expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w08": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "LinkedIn photo, early 40s woman, American ethnicity, light skin, red hair, wavy, medium length. Olive green tailored dress. Focused, confident look, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w09": {
-        "gender": "woman",
-        "age": "mid40s",
-        "prompt": "Business profile photo, mid 40s woman, European ethnicity, fair skin, ash blonde hair, straight, shoulder length. Navy blue sweater, white collar showing. Approachable, professional expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w10": {
-        "gender": "woman",
-        "age": "late30s",
-        "prompt": "Corporate portrait, late 30s woman, American ethnicity, medium skin tone, black hair, straight, long, side-parted. Bright blue blazer, dark top. Energetic, positive expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w11": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "Professional headshot, early 40s woman, European ethnicity, light skin, light brown hair, curly, medium length. Cream blazer, grey blouse. Calm, expert expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w12": {
-        "gender": "woman",
-        "age": "mid30s",
-        "prompt": "LinkedIn profile picture, mid 30s woman, American ethnicity, fair skin, dark blonde hair, wavy, bob cut. Structured white shirt. Crisp, professional look, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w13": {
-        "gender": "woman",
-        "age": "late40s",
-        "prompt": "Business photo, late 40s woman, European ethnicity, medium skin tone, grey hair, short, textured. Forest green tailored jacket. Wise, confident expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w14": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "Corporate profile, early 40s woman, American ethnicity, light skin, dark red hair, straight, shoulder length. Lavender blouse, charcoal suit jacket visible. Thoughtful, approachable expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w15": {
-        "gender": "woman",
-        "age": "mid30s",
-        "prompt": "Professional portrait, mid 30s woman, European ethnicity, fair skin, blonde hair, long, styled. Taupe colored tailored dress. Serene, professional demeanor, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m01": {
-        "gender": "man",
-        "age": "late30s",
-        "prompt": "Professional headshot, late 30s man, European ethnicity, light skin, short brown hair, neatly styled. Navy blue suit jacket, light blue shirt, open collar. Confident, direct gaze, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m02": {
-        "gender": "man",
-        "age": "early40s",
-        "prompt": "Corporate profile photo, early 40s man, American ethnicity, fair skin, receding hairline, short grey hair. Charcoal grey suit jacket, white shirt, subtle patterned tie. Serious, professional expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m03": {
-        "gender": "man",
-        "age": "mid30s",
-        "prompt": "LinkedIn portrait, mid 30s man, European ethnicity, medium skin tone, dark brown hair, side-parted. Light grey blazer, black t-shirt. Approachable, intelligent look, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m04": {
-        "gender": "man",
-        "age": "late40s",
-        "prompt": "Business headshot, late 40s man, American ethnicity, light skin, short blonde hair, styled back. Dark green sweater over a collared shirt. Calm, experienced expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m05": {
-        "gender": "man",
-        "age": "early40s",
-        "prompt": "Professional photo, early 40s man, European ethnicity, fair skin, dark hair, short, textured. Black suit jacket, crisp white shirt, no tie. Assured, capable demeanor, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w16": {
-        "gender": "woman",
-        "age": "mid40s",
-        "prompt": "Professional LinkedIn profile picture, mid 40s woman, American ethnicity, medium skin tone, short brown hair, slightly textured. Dark grey tailored suit jacket, simple white top. Calm, focused expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w17": {
-        "gender": "woman",
-        "age": "early30s",
-        "prompt": "Corporate headshot, early 30s woman, European ethnicity, fair skin, long wavy blonde hair. Light grey blazer, patterned silk blouse. Friendly, engaging smile, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w18": {
-        "gender": "woman",
-        "age": "late30s",
-        "prompt": "Business portrait, late 30s woman, American ethnicity, light skin, dark, straight shoulder-length hair. Burgundy sheath dress, subtle necklace. Serious, thoughtful expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w19": {
-        "gender": "woman",
-        "age": "mid40s",
-        "prompt": "Professional photo, mid 40s woman, European ethnicity, medium skin tone, curly auburn hair, medium length. Navy blue sweater, crisp white collar visible. Approachable, knowledgeable look, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w20": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "LinkedIn photo, early 40s woman, American ethnicity, fair skin, short, styled grey hair. Teal tailored top. Confident, direct gaze, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w21": {
-        "gender": "woman",
-        "age": "late30s",
-        "prompt": "Corporate profile, late 30s woman, European ethnicity, light skin, long straight dark hair, pulled back. Black blazer, vibrant colored blouse. Energetic, professional expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w22": {
-        "gender": "woman",
-        "age": "mid30s",
-        "prompt": "Business headshot, mid 30s woman, American ethnicity, medium skin tone, brown bob with bangs. Olive green tailored jacket, white t-shirt. Relaxed, confident smile, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w23": {
-        "gender": "woman",
-        "age": "early40s",
-        "prompt": "Professional portrait, early 40s woman, European ethnicity, fair skin, medium length wavy red hair. Charcoal grey dress. Calm, expert demeanor, soft lighting, facing forward. solid light neutral color background."
-    },
-    "w24": {
-        "gender": "woman",
-        "age": "late40s",
-        "prompt": "LinkedIn profile picture, late 40s woman, American ethnicity, light skin, short blonde hair, side-parted. Navy blue blouse, grey cardigan. Thoughtful, kind expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "w25": {
-        "gender": "woman",
-        "age": "mid30s",
-        "prompt": "Corporate photo, mid 30s woman, European ethnicity, medium skin tone, long black hair, straight. Bright red tailored blazer, black top. Dynamic, professional look, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m06": {
-        "gender": "man",
-        "age": "mid40s",
-        "prompt": "Professional LinkedIn profile picture, mid 40s man, European ethnicity, fair skin, short grey hair, side-parted. Dark blue suit jacket, white dress shirt, dark tie. Serious, professional expression, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m07": {
-        "gender": "man",
-        "age": "early30s",
-        "prompt": "Corporate headshot, early 30s man, American ethnicity, light skin, short brown hair, messy texture. Light grey blazer, crew neck t-shirt. Approachable, confident smile, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m08": {
-        "gender": "man",
-        "age": "late30s",
-        "prompt": "Business portrait, late 30s man, European ethnicity, medium skin tone, bald head, short beard. Black suit jacket, dark grey shirt. Calm, authoritative look, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m09": {
-        "gender": "man",
-        "age": "mid40s",
-        "prompt": "Professional photo, mid 40s man, American ethnicity, fair skin, short blonde hair. Brown tweed blazer, blue oxford shirt. Thoughtful, experienced expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m10": {
-        "gender": "man",
-        "age": "early40s",
-        "prompt": "LinkedIn photo, early 40s man, European ethnicity, light skin, short dark hair, styled up. Navy blue sweater, white collared shirt underneath. Friendly, professional gaze, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m11": {
-        "gender": "man",
-        "age": "late30s",
-        "prompt": "Corporate profile, late 30s man, American ethnicity, medium skin tone, buzz cut. Charcoal grey suit jacket, plain black t-shirt. Direct, serious expression, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m12": {
-        "gender": "man",
-        "age": "mid30s",
-        "prompt": "Business headshot, mid 30s man, European ethnicity, fair skin, medium length brown hair. Olive green shirt, open collar. Relaxed, intelligent smile, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m13": {
-        "gender": "man",
-        "age": "early40s",
-        "prompt": "Professional portrait, early 40s man, American ethnicity, light skin, short grey hair, side part. Light blue dress shirt, dark tie, suit jacket visible. Calm, expert demeanor, soft lighting, facing forward. solid light neutral color background."
-    },
-    "m14": {
-        "gender": "man",
-        "age": "late40s",
-        "prompt": "LinkedIn profile picture, late 40s man, European ethnicity, medium skin tone, bald head, clean-shaven. Dark purple sweater. Wise, approachable look, soft lighting, facing camera. solid light neutral color background."
-    },
-    "m15": {
-        "gender": "man",
-        "age": "mid30s",
-        "prompt": "Corporate photo, mid 30s man, American ethnicity, fair skin, short dark brown hair. Black blazer, white dress shirt, slim tie. Crisp, professional appearance, soft lighting, facing forward. solid light neutral color background."
-    }
+    "w01": "Professional headshot, late 30s woman, European ethnicity, fair skin, straight dark brown hair, shoulder-length. Navy blue tailored blazer, white button-up shirt. Confident, approachable expression, soft lighting, facing camera. solid light neutral color background.",
+    "w02": "Corporate profile photo, early 40s woman, American ethnicity, light skin, wavy blonde hair, bob cut. Charcoal grey suit jacket, pastel blue blouse. Friendly, professional gaze, soft lighting, facing forward. solid light neutral color background.",
+    "w03": "LinkedIn portrait, mid 30s woman, European ethnicity, medium skin tone, curly black hair, medium length. Emerald green tailored dress. Calm, insightful expression, soft lighting, facing camera. solid light neutral color background.",
+    "w04": "Professional photo, late 40s woman, American ethnicity, fair skin, short silver hair, neatly styled. Black turtleneck sweater. Elegant, thoughtful expression, soft lighting, facing forward. solid light neutral color background.",
+    "w05": "Business headshot, early 40s woman, European ethnicity, light skin, straight blonde hair, long, pulled back in a ponytail. Burgundy blazer, cream blouse. Assured, capable expression, soft lighting, facing camera. solid light neutral color background.",
+    "w06": "Corporate headshot, mid 30s woman, American ethnicity, medium skin tone, wavy brown hair, shoulder length. Teal tailored jacket, white top. Warm, professional smile, soft lighting, facing forward. solid light neutral color background.",
+    "w07": "Professional portrait, late 30s woman, European ethnicity, fair skin, dark brown hair, lob cut. Soft pink blouse, grey cardigan. Gentle, intelligent expression, soft lighting, facing camera. solid light neutral color background.",
+    "w08": "LinkedIn photo, early 40s woman, American ethnicity, light skin, red hair, wavy, medium length. Olive green tailored dress. Focused, confident look, soft lighting, facing forward. solid light neutral color background.",
+    "w09": "Business profile photo, mid 40s woman, European ethnicity, fair skin, ash blonde hair, straight, shoulder length. Navy blue sweater, white collar showing. Approachable, professional expression, soft lighting, facing camera. solid light neutral color background.",
+    "w10": "Corporate portrait, late 30s woman, American ethnicity, medium skin tone, black hair, straight, long, side-parted. Bright blue blazer, dark top. Energetic, positive expression, soft lighting, facing forward. solid light neutral color background.",
+    "w11": "Professional headshot, early 40s woman, European ethnicity, light skin, light brown hair, curly, medium length. Cream blazer, grey blouse. Calm, expert expression, soft lighting, facing camera. solid light neutral color background.",
+    "w12": "LinkedIn profile picture, mid 30s woman, American ethnicity, fair skin, dark blonde hair, wavy, bob cut. Structured white shirt. Crisp, professional look, soft lighting, facing forward. solid light neutral color background.",
+    "w13": "Business photo, late 40s woman, European ethnicity, medium skin tone, grey hair, short, textured. Forest green tailored jacket. Wise, confident expression, soft lighting, facing camera. solid light neutral color background.",
+    "w14": "Corporate profile, early 40s woman, American ethnicity, light skin, dark red hair, straight, shoulder length. Lavender blouse, charcoal suit jacket visible. Thoughtful, approachable expression, soft lighting, facing forward. solid light neutral color background.",
+    "w15": "Professional portrait, mid 30s woman, European ethnicity, fair skin, blonde hair, long, styled. Taupe colored tailored dress. Serene, professional demeanor, soft lighting, facing camera. solid light neutral color background.",
+    "w16": "Professional LinkedIn profile picture, mid 40s woman, American ethnicity, medium skin tone, short brown hair, slightly textured. Dark grey tailored suit jacket, simple white top. Calm, focused expression, soft lighting, facing camera. solid light neutral color background.",
+    "w17": "Corporate headshot, early 30s woman, European ethnicity, fair skin, long wavy blonde hair. Light grey blazer, patterned silk blouse. Friendly, engaging smile, soft lighting, facing forward. solid light neutral color background.",
+    "w18": "Business portrait, late 30s woman, American ethnicity, light skin, dark, straight shoulder-length hair. Burgundy sheath dress, subtle necklace. Serious, thoughtful expression, soft lighting, facing camera. solid light neutral color background.",
+    "w19": "Professional photo, mid 40s woman, European ethnicity, medium skin tone, curly auburn hair, medium length. Navy blue sweater, crisp white collar visible. Approachable, knowledgeable look, soft lighting, facing forward. solid light neutral color background.",
+    "w20": "LinkedIn photo, early 40s woman, American ethnicity, fair skin, short, styled grey hair. Teal tailored top. Confident, direct gaze, soft lighting, facing camera. solid light neutral color background.",
+    "w21": "Corporate profile, late 30s woman, European ethnicity, light skin, long straight dark hair, pulled back. Black blazer, vibrant colored blouse. Energetic, professional expression, soft lighting, facing forward. solid light neutral color background.",
+    "w22": "Business headshot, mid 30s woman, American ethnicity, medium skin tone, brown bob with bangs. Olive green tailored jacket, white t-shirt. Relaxed, confident smile, soft lighting, facing camera. solid light neutral color background.",
+    "w23": "Professional portrait, early 40s woman, European ethnicity, fair skin, medium length wavy red hair. Charcoal grey dress. Calm, expert demeanor, soft lighting, facing forward. solid light neutral color background.",
+    "w24": "LinkedIn profile picture, late 40s woman, American ethnicity, light skin, short blonde hair, side-parted. Navy blue blouse, grey cardigan. Thoughtful, kind expression, soft lighting, facing camera. solid light neutral color background.",
+    "w25": "Corporate photo, mid 30s woman, European ethnicity, medium skin tone, long black hair, straight. Bright red tailored blazer, black top. Dynamic, professional look, soft lighting, facing forward. solid light neutral color background.",
+    "m01": "Professional headshot, late 30s man, European ethnicity, light skin, short brown hair, neatly styled. Navy blue suit jacket, light blue shirt, open collar. Confident, direct gaze, soft lighting, facing camera. solid light neutral color background.",
+    "m02": "Corporate profile photo, early 40s man, American ethnicity, fair skin, receding hairline, short grey hair. Charcoal grey suit jacket, white shirt, subtle patterned tie. Serious, professional expression, soft lighting, facing forward. solid light neutral color background.",
+    "m03": "LinkedIn portrait, mid 30s man, European ethnicity, medium skin tone, dark brown hair, side-parted. Light grey blazer, black t-shirt. Approachable, intelligent look, soft lighting, facing camera. solid light neutral color background.",
+    "m04": "Business headshot, late 40s man, American ethnicity, light skin, short blonde hair, styled back. Dark green sweater over a collared shirt. Calm, experienced expression, soft lighting, facing forward. solid light neutral color background.",
+    "m05": "Professional photo, early 40s man, European ethnicity, fair skin, dark hair, short, textured. Black suit jacket, crisp white shirt, no tie. Assured, capable demeanor, soft lighting, facing forward. solid light neutral color background."
   }
+  
