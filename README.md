@@ -51,8 +51,8 @@ This is a **Gradio-powered image generation app** built using the `FluxPipeline`
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/shemayon/flux-profile-generator.git
-cd flux-profile-generator
+git clone https://github.com/shemayon/FLUX-Based-Text-to-Image-Generator-App
+cd FLUX-Based-Text-to-Image-Generator-App
 ```
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
